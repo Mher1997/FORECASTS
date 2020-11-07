@@ -1,0 +1,87 @@
+.card{
+    box-shadow: 0 0 5px 0px #cfcfcf;
+    border-radius: 25px;
+    margin: 30px auto;
+    width: 80%;
+    &-header{
+        &-section{
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #cecece;
+            p{
+                margin: 0;
+            }
+            button{
+                background-color: #3070f4;
+                color: #ffffff;
+                border: none;
+                height: 35px;
+                padding: 0 30px;
+                border-radius: 20px;
+                box-shadow: none;
+            }
+        }
+    }
+    &-body{
+        padding: 10px 40px 30px;
+        .forecast{
+            margin-bottom: 40px;
+            position: relative;
+            &-title{
+                p{
+                    font-size: 14px;
+                    color: #686868;
+                    margin-bottom: 20px;
+                }
+            }
+            &-range{
+                height: 40px;
+                .range{
+                    height: 100%;
+                    display: inline-block;
+                }
+                .range-type-1{
+                    background-color: #0e2034;
+                    border-radius: 20px 0 0 20px;
+                }
+                .range-type-2{
+                    background-color: #2f6efb;
+                }
+                .range-type-3{
+                    background-color: #7cc4f6;
+                    border-radius: 0 20px 20px 0;
+                }
+            }
+            &-rank{
+                position: absolute;
+                top: 56%;
+                left: 0;
+                transform: translateY(-50%);
+                border-top: 3px dashed white;
+                &::after{
+                    content: "";
+                    background-image: url(./right-arrow.svg);
+                    background-repeat: no-repeat;
+                    background-size: 25px;
+                    width: 25px;
+                    height: 25px;
+                    position: absolute;
+                    right: -20px;
+                    top: -14.5px;
+                }
+            }
+            &-bottom{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 15px;
+                margin-top: 10px;
+                span{
+                    font-size: 12px;
+                    color: #9c9c9c;
+                }
+            }
+        }
+    }
+}
